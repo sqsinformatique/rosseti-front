@@ -1,8 +1,28 @@
 @import "assets/sass/variables/variables";
 @import "assets/sass/common/grid";
+@import "assets/sass/common/icons";
+
 @import "assets/sass/components/login";
+@import "assets/sass/components/main";
+
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 @import "~@angular/material/theming";
 
 html, body { height: 100%; }
+
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+a{
+  color: #5e5f61;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #5e5f61;
+  text-decoration: none;
+}
+
+a:visited{
+  color: #5e5f61;
+  text-decoration: none;
+}

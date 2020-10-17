@@ -1,0 +1,9 @@
+<mat-toolbar color="primary">
+  <span>{{title}}</span>
+  <button *ngIf="back" mat-icon-button>
+    <mat-icon>keyboard_backspace</mat-icon>
+  </button>
+  <button *ngIf="button" mat-icon-button>
+    <mat-icon>menu</mat-icon>
+  </button>
+</mat-toolbar>

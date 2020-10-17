@@ -1,0 +1,18 @@
+<div class="tasks">
+  <div *ngIf="!tasks.length">
+    Распоряжений нет
+  </div>
+  <a *ngFor="let task of tasks" [routerLink]="'/order'" class="tasks__block">
+    <div class="row row_offset-middle">
+      <div class="tasks__block-name">{{task.name}}</div>
+    </div>
+    <div class="row row_end row_offset-middle">
+      <div class="icon icon_big icon_line"></div>
+      <div class="tasks__block-description">{{task.description}}</div>
+    </div>
+    <div class="row row_offset-middle row_between">
+      <div class="tasks__block-data">{{task.data}}</div>
+      <div class="tasks__block-status tasks__block-status_{{task.status}}"></div>
+    </div>
+  </a>
+</div>

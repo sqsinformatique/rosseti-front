@@ -1,0 +1,21 @@
+.icon {
+  width: 32px;
+  height: 32px;
+  padding: 5px;
+  background-position: 50%;
+  background-size: contain;
+
+  &_big {
+    width: 64px;
+    height: 64px;
+  }
+
+  &_small {
+    width: 32px;
+    height: 32px;
+  }
+
+  &_line {
+    background-image: url("/assets/img/icons/line.png");
+  }
+}
