@@ -1,3 +1,40 @@
-<p>
-  xc
-</p>
+<div class="order">
+  <span *ngIf="!task">Задача была удалена или еще не создана</span>
+  <div *ngIf="task">
+    <h1 style="text-align: center">
+      {{task.name}}
+    </h1>
+    <h2  style="text-align: center">
+      {{task.description}}
+    </h2>
+    <div class="row row_between">
+      <div>
+        <b>Место и наименование
+          проведения работ</b>
+        <div>
+          ВЛ 10 кВ ТП №265- ТП № 240
+        </div>
+      </div>
+<!--      <div>-->
+<!--        <div>Технические мероприятия по-->
+<!--          обеспечению безопасности работ</div>-->
+<!--        <div></div>-->
+<!--      </div>-->
+      <div>
+        <b>Распорядился</b>
+        <div>Цветов Р. В.
+          (гр.V)</div>
+      </div>
+      <div>
+        <b>Провел целевой
+          инструктаж</b>
+        <div>10.10.20 9:30</div>
+      </div>
+    </div>
+    <div class="row row_between">
+      <span>
+        {{task.data}}
+      </span>
+    </div>
+  </div>
+</div>

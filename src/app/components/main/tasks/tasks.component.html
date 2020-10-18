@@ -2,7 +2,7 @@
   <div *ngIf="!tasks.length">
     Распоряжений нет
   </div>
-  <a *ngFor="let task of tasks" [routerLink]="'/order'" class="tasks__block">
+  <a *ngFor="let task of tasks" [routerLink]="['/order', task.id]" class="tasks__block">
     <div class="row row_offset-middle">
       <div class="tasks__block-name">{{task.name}}</div>
     </div>
