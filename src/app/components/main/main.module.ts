@@ -6,6 +6,7 @@ import {OrderComponent} from './order/order.component';
 import {RouterModule} from '@angular/router';
 import {TasksComponent} from './tasks/tasks.component';
 import {AppModule} from '../../app.module';
+import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import {AppModule} from '../../app.module';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    MatButtonModule
   ],
   providers: [MainService],
 })

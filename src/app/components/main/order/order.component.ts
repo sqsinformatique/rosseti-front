@@ -11,7 +11,7 @@ export class OrderComponent {
   task: Tasks;
   id: number;
   constructor(private mainService: MainService, private route: ActivatedRoute) {
-    route.params.subscribe(params => this.id = +params['id']);
+    route.params.subscribe(params => this.id = +params.id);
     this.task = this.mainService.getOrderById(this.id);
   }
 }

@@ -15,6 +15,14 @@
     justify-content: center;
   }
 
+  &_right {
+    justify-content: flex-end;
+  }
+
+  &_left {
+    justify-content: flex-start;
+  }
+
   &_start {
     align-items: flex-start;
   }

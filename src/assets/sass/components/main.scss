@@ -50,5 +50,11 @@
 }
 .order{
   max-width: 1024px;
-  margin: 0 auto;
+  margin: 10px auto;
+  padding: 0 10px;
+
+  &__column {
+    text-align: center;
+    padding: 0 10px;
+  }
 }
